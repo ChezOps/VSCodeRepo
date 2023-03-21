@@ -1,7 +1,6 @@
 ﻿Set-StrictMode -off
 
 $myArray=@("Test1","Test2","Test3")
-
 $myArray+="Test5"
 
 ####################
@@ -28,4 +27,4 @@ Measure-Command -Expression {@(0..20000).ForEach({$arrayList.Add($_)})}
 
 ##updates
 
-Get-Date
+(Get-Date).GetType()
