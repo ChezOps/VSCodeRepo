@@ -19,3 +19,9 @@ $myHashTable.ContainsValue($true)
 $myHashTable.Add('key10','testing add function')
 $myHashTable['key11']= "Added using square brackets"
 $myHashTable.key12="Added via dot notation"
+
+# Change key values of hashtable
+$myHashTable.key3=$false
+
+# Remove key from hashtable
+$myHashTable.Remove('key3')
