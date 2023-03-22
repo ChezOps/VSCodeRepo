@@ -16,7 +16,7 @@
 $filePath = ""
 if(Test-Path -Path $filePath) {
     $Data = Get-Content -Path $filePath
-    if($Data.Count -lt 1){
+    if($Data.Count -lt 2){
         Write-Output "This file has less than 2 lines"
     }
     elseif ($Data.Count -eq 1) {
