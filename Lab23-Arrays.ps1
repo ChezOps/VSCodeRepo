@@ -1,9 +1,12 @@
 ﻿Set-StrictMode -off
 
+# Initialise an Array
 $myArray=@("Test1","Test2","Test3")
+
+#Add to the Array
 $myArray+="Test5"
 
-####################
+###################
 ## Array Lists ##
 
 # Create the Array List
@@ -24,7 +27,3 @@ $arrayList = New-Object -TypeName System.Collections.ArrayList
 
 Measure-Command -Expression {@(0..20000).ForEach({$array+=$_})}
 Measure-Command -Expression {@(0..20000).ForEach({$arrayList.Add($_)})}
-
-##updates
-
-(Get-Date).GetType()

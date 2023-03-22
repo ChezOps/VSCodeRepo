@@ -1,4 +1,4 @@
-## Create a hashtable
+# Create a hashtable
 $myHashTable=@{
     key1=100
     key2=200
@@ -21,7 +21,7 @@ $myHashTable['key11']= "Added using square brackets"
 $myHashTable.key12="Added via dot notation"
 
 # Change key values of hashtable
-$myHashTable.key3=$false
+$myHashTable.key3 = $false
 
 # Remove key from hashtable
 $myHashTable.Remove('key3')
