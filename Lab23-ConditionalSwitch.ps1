@@ -33,6 +33,7 @@ switch ($firstName) {
 }
 
 # Use a switch to review data from filePath object
+## Use breaks to prevent multiple switch results triggering
 switch($Data.Count) {
     {$_ -lt 2} {
         Write-Output "File has less than 2 lines"
